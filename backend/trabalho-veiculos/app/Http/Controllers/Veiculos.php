@@ -26,45 +26,54 @@ class Veiculos extends Controller
         $veiculo->km = $request->input('km');
 
         $veiculo->save();
+
+        return response()->json($veiculo);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-
-    }
-
-    /**
-     * Display the specified resource.
-     */
     public function show(string $id)
     {
-        //
+        $veiculo = Veiculo::find($id);
+        if(!$veiculo){
+            return response()->json([
+                'message'   => 'Veiculo não encontrado',
+            ], 404);
+        }
+
+        return response()->json($veiculo);
+
+
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, string $id)
     {
-        //
+        $findVeiculo = Veiculo::find($id);
+        if(!$findVeiculo){
+            return response()->json([
+                'message'   => 'Veiculo não encontrado',
+            ], 404);
+        } else {
+            $findVeiculo->modelo = $request->input('modelo');
+            $findVeiculo->marca = $request->input('marca');
+            $findVeiculo->ano = $request->input('ano');
+            $findVeiculo->placa = $request->input('placa');
+            $findVeiculo->cor = $request->input('cor');
+            $findVeiculo->km = $request->input('km');
+
+            $findVeiculo->save();
+        }
+
+        return response()->json($findVeiculo);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(string $id)
     {
-        //
+        $findVeiculo = Veiculo::find($id);
+        if(!$findVeiculo){
+            return response()->json([
+                'message'   => 'Veiculo não encontrado',
+            ], 404);
+        } else {
+            $findVeiculo->delete();
+        }
     }
 }

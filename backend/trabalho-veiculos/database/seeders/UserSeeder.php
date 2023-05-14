@@ -16,7 +16,7 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         // create seeders for user migration
-        User::create([
+        User::firstOrCreate([
             'name' => 'admin',
             'email' => 'admin@email.com',
             'password' => \Hash::make('admin')

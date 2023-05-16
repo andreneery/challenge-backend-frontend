@@ -14,7 +14,7 @@ class VeiculosSeeder extends Seeder
     {
         // create seeders for veiculos migration
 
-        Veiculo::create([
+        Veiculo::firstOrCreate([
             'modelo' => 'Fusca',
             'marca' => 'Volkswagen',
             'ano' => '1970',
@@ -22,7 +22,7 @@ class VeiculosSeeder extends Seeder
             'cor' => 'Azul',
             'km' => '100000',
         ]);
-        Veiculo::create([
+        Veiculo::firstOrCreate([
             'modelo' => 'Gol',
             'marca' => 'Volkswagen',
             'ano' => '2010',
@@ -30,7 +30,7 @@ class VeiculosSeeder extends Seeder
             'cor' => 'Preto',
             'km' => '50000',
         ]);
-        Veiculo::create([
+        Veiculo::firstOrCreate([
             'modelo' => 'Uno',
             'marca' => 'Fiat',
             'ano' => '2015',
@@ -38,7 +38,7 @@ class VeiculosSeeder extends Seeder
             'cor' => 'Branco',
             'km' => '20000',
         ]);
-        Veiculo::create([
+        Veiculo::firstOrCreate([
             'modelo' => 'Celta',
             'marca' => 'Chevrolet',
             'ano' => '2018',
@@ -46,7 +46,7 @@ class VeiculosSeeder extends Seeder
             'cor' => 'Vermelho',
             'km' => '10000',
         ]);
-        Veiculo::create([
+        Veiculo::firstOrCreate([
             'modelo' => 'Civic',
             'marca' => 'Honda',
             'ano' => '2020',
@@ -54,7 +54,7 @@ class VeiculosSeeder extends Seeder
             'cor' => 'Prata',
             'km' => '1000',
         ]);
-        Veiculo::create([
+        Veiculo::firstOrCreate([
             'modelo' => 'Corolla',
             'marca' => 'Toyota',
             'ano' => '2021',
@@ -62,7 +62,7 @@ class VeiculosSeeder extends Seeder
             'cor' => 'Preto',
             'km' => '100',
         ]);
-        Veiculo::create([
+        Veiculo::firstOrCreate([
             'modelo' => 'Cruze',
             'marca' => 'Chevrolet',
             'ano' => '2019',
@@ -70,7 +70,7 @@ class VeiculosSeeder extends Seeder
             'cor' => 'Branco',
             'km' => '10000',
         ]);
-        Veiculo::create([
+        Veiculo::firstOrCreate([
             'modelo' => 'Fiesta',
             'marca' => 'Ford',
             'ano' => '2017',

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('modelo');
             $table->string('marca');
             $table->string('ano');
-            $table->string('placa');
+            $table->string('placa') -> unique();
             $table->string('cor');
             $table->string('km');
             $table->timestamps();

@@ -10,20 +10,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// create a route to register a user
-Route::post('/register', 'App\Http\Controllers\AuthController@register');
-
-// create a route to login a user
-Route::post('/login', 'App\Http\Controllers\AuthController@login');
-
-// create a route to logout a user
-Route::post('/logout', 'App\Http\Controllers\AuthController@logout');
-
-// create a route to get the authenticated user
-Route::get('/user', 'App\Http\Controllers\AuthController@user');
-
-
-
 //create a route to get all veiculos
 Route::get('/veiculos', 'App\Http\Controllers\Veiculos@index');
 

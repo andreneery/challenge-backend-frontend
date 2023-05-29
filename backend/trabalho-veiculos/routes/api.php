@@ -13,7 +13,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //create a route to get all veiculos
 Route::get('/veiculo', [Veiculos::class, 'index']);
 
-
 // create a route to create a new veiculo
 Route::post('/veiculo', [Veiculos::class, 'create']);
 

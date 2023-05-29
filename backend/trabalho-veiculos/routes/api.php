@@ -11,21 +11,20 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 //create a route to get all veiculos
-Route::get('/veiculos', 'App\Http\Controllers\Veiculos@index');
+Route::get('/veiculo', [Veiculos::class, 'index']);
 
 
 // create a route to create a new veiculo
-Route::post('/veiculos', 'App\Http\Controllers\Veiculos@create');
+Route::post('/veiculo', [Veiculos::class, 'create']);
 
 // create a route to get a veiculo by id
-Route::get('/veiculos/{id}', 'App\Http\Controllers\Veiculos@show');
+Route::get('/veiculo/{id}', [Veiculos::class, 'show']);
 
 // create a route to update a veiculo by id
-Route::put('/veiculos/{id}', 'App\Http\Controllers\Veiculos@update');
-
+Route::put('/veiculos/{id}', [Veiculos::class, 'update']);
 
 //create a route to delete a veiculo by id
-Route::delete('/veiculos/{id}', 'App\Http\Controllers\Veiculos@destroy');
+Route::delete('/veiculos/{id}', [Veiculos::class, 'destroy']);
 
 
 

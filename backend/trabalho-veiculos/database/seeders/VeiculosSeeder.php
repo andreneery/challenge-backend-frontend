@@ -21,6 +21,12 @@ class VeiculosSeeder extends Seeder
             'placa' => 'ABC-1234',
             'cor' => 'Azul',
             'km' => '100000',
+            'renavam' => '123456789',
+            'tipo' => 'Carro',
+            'combustivel' => 'Gasolina',
+            'chassis' => '123456789',
+            'valor' => '10000',
+            'comentario' => 'Carro antigo',
         ]);
         Veiculo::firstOrCreate([
             'modelo' => 'Gol',
@@ -29,6 +35,12 @@ class VeiculosSeeder extends Seeder
             'placa' => 'DEF-5678',
             'cor' => 'Preto',
             'km' => '50000',
+            'renavam' => '987654321',
+            'tipo' => 'Carro',
+            'combustivel' => 'Gasolina',
+            'chassis' => '987654321',
+            'valor' => '20000',
+            'comentario' => 'Carro novo',
         ]);
         Veiculo::firstOrCreate([
             'modelo' => 'Uno',
@@ -37,6 +49,12 @@ class VeiculosSeeder extends Seeder
             'placa' => 'GHI-9012',
             'cor' => 'Branco',
             'km' => '20000',
+            'renavam' => '123456789',
+            'tipo' => 'Carro',
+            'combustivel' => 'Gasolina',
+            'chassis' => '123456789',
+            'valor' => '30000',
+            'comentario' => 'Carro novo',
         ]);
         Veiculo::firstOrCreate([
             'modelo' => 'Celta',
@@ -45,6 +63,12 @@ class VeiculosSeeder extends Seeder
             'placa' => 'JKL-3456',
             'cor' => 'Vermelho',
             'km' => '10000',
+            'renavam' => '987654321',
+            'tipo' => 'Carro',
+            'combustivel' => 'Gasolina',
+            'chassis' => '987654321',
+            'valor' => '40000',
+            'comentario' => 'Carro novo',
         ]);
         Veiculo::firstOrCreate([
             'modelo' => 'Civic',
@@ -53,6 +77,12 @@ class VeiculosSeeder extends Seeder
             'placa' => 'MNO-7890',
             'cor' => 'Prata',
             'km' => '1000',
+            'renavam' => '123456789',
+            'tipo' => 'Carro',
+            'combustivel' => 'Gasolina',
+            'chassis' => '123456789',
+            'valor' => '50000',
+            'comentario' => 'Carro novo',
         ]);
         Veiculo::firstOrCreate([
             'modelo' => 'Corolla',
@@ -61,6 +91,12 @@ class VeiculosSeeder extends Seeder
             'placa' => 'PQR-1234',
             'cor' => 'Preto',
             'km' => '100',
+            'renavam' => '987654321',
+            'tipo' => 'Carro',
+            'combustivel' => 'Gasolina',
+            'chassis' => '987654321',
+            'valor' => '60000',
+            'comentario' => 'Carro novo',
         ]);
         Veiculo::firstOrCreate([
             'modelo' => 'Cruze',
@@ -69,6 +105,12 @@ class VeiculosSeeder extends Seeder
             'placa' => 'STU-5678',
             'cor' => 'Branco',
             'km' => '10000',
+            'renavam' => '123456789',
+            'tipo' => 'Carro',
+            'combustivel' => 'Gasolina',
+            'chassis' => '123456789',
+            'valor' => '70000',
+            'comentario' => 'Carro novo',
         ]);
         Veiculo::firstOrCreate([
             'modelo' => 'Fiesta',
@@ -77,6 +119,12 @@ class VeiculosSeeder extends Seeder
             'placa' => 'VWX-9012',
             'cor' => 'Azul',
             'km' => '20000',
+            'renavam' => '987654321',
+            'tipo' => 'Carro',
+            'combustivel' => 'Gasolina',
+            'chassis' => '987654321',
+            'valor' => '80000',
+            'comentario' => 'Carro novo',
         ]);
     }
 }

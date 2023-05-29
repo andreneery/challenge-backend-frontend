@@ -24,6 +24,12 @@ class Veiculos extends Controller
         $veiculo->placa = $request->input('placa');
         $veiculo->cor = $request->input('cor');
         $veiculo->km = $request->input('km');
+        $veiculo->renavam = $request->input('renavam');
+        $veiculo->tipo = $request->input('tipo');
+        $veiculo->combustivel = $request->input('combustivel');
+        $veiculo->chassis = $request->input('chassis');
+        $veiculo->valor = $request->input('valor');
+        $veiculo->comentario = $request->input('comentario');
 
         $veiculo->save();
 
@@ -58,6 +64,12 @@ class Veiculos extends Controller
             $findVeiculo->placa = $request->input('placa');
             $findVeiculo->cor = $request->input('cor');
             $findVeiculo->km = $request->input('km');
+            $findVeiculo->renavam = $request->input('renavam');
+            $findVeiculo->tipo = $request->input('tipo');
+            $findVeiculo->combustivel = $request->input('combustivel');
+            $findVeiculo->chassis = $request->input('chassis');
+            $findVeiculo->valor = $request->input('valor');
+            $findVeiculo->comentario = $request->input('comentario');
 
             $findVeiculo->save();
         }

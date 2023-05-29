@@ -17,5 +17,11 @@ class Veiculo extends Model
         'placa',
         'cor',
         'km',
+        'renavam',
+        'tipo',
+        'combustivel',
+        'chassis',
+        'valor',
+        'comentario',
     ];
 }

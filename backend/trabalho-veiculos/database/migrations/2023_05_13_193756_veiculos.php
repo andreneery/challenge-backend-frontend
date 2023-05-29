@@ -20,6 +20,12 @@ return new class extends Migration
             $table->string('placa') -> unique();
             $table->string('cor');
             $table->string('km');
+            $table->string('renavam');
+            $table->string('tipo');
+            $table->string('combustivel');
+            $table->string('chassis');
+            $table->string('valor');
+            $table->string('comentario') -> nullable();
             $table->timestamps();
         });
     }

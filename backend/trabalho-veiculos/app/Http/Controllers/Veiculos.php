@@ -88,4 +88,13 @@ class Veiculos extends Controller
             $findVeiculo->delete();
         }
     }
+
+    //qtd de veiculos
+    public function mostrarQuantidadeVeiculos()
+    {
+        $qtdVeiculos = Veiculo::count();
+        
+        return response()->json($qtdVeiculos);
+    }
+
 }

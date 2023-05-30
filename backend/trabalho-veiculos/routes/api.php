@@ -11,7 +11,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 //create a route to get all veiculos
-Route::get('/veiculo', [Veiculos::class, 'index']);
+Route::get('/veiculos', [Veiculos::class, 'index']);
 
 // create a route to create a new veiculo
 Route::post('/veiculo', [Veiculos::class, 'create']);
@@ -25,5 +25,5 @@ Route::put('/veiculos/{id}', [Veiculos::class, 'update']);
 //create a route to delete a veiculo by id
 Route::delete('/veiculos/{id}', [Veiculos::class, 'destroy']);
 
-
-
+//Conta quantos veículos tem cadastrados
+Route::get('/qtd-veiculos', [Veiculos::class, 'mostrarQuantidadeVeiculos']);
